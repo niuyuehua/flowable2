@@ -44,25 +44,7 @@ public class DongtaigenzongController {
      * */
     @RequestMapping("ping")
     public Result ping() throws Exception {
-        for (int j = 0; j < 30; j++)
-        ThreadPoolUtil.getThreadPoolExecutor().execute(new Runnable() {
-           
-            @Override
-            public void run() {
-                for(int i = 0; i < 10;i++)
-                {
-                    System.out.print(i);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-                System.out.println();
-            }
-        });
-
-
+        
         return Result.sucess();
     }
 
