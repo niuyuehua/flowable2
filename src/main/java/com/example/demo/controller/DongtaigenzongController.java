@@ -44,7 +44,6 @@ public class DongtaigenzongController {
      * */
     @RequestMapping("ping")
     public Result ping() throws Exception {
-        
         return Result.sucess();
     }
 
